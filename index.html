@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.3.0.60745 -->
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+<meta name="description" content="Description">
+<meta name="keywords" content="Keywords">
+
+
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.themeSlider) {
+        $(".art-slidecontainercontentimage013").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            inner.children().filter("script").remove();
+            var helper = null;
+            
+            if ($.support.themeTransition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.themeTransition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slidecontentimage0130": {
+    "bgimage" : "url('images/slidecontentimage0130.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slidecontentimage0131": {
+    "bgimage" : "url('images/slidecontentimage0131.jpg')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.themeSlider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatorcontentimage013"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>
+
+.art-slidecontainercontentimage013 {
+    position: relative;
+        width: 640px;
+    height: 388px;
+        }
+
+.default-responsive .art-header .art-slidecontainercontentimage013,
+.responsive .art-header .art-slidecontainercontentimage013
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainercontentimage013 {
+  position: absolute !important;
+}
+
+.art-slidecontainercontentimage013 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainercontentimage013 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainercontentimage013 .active, .art-slidecontainercontentimage013 .next, .art-slidecontainercontentimage013 .prev {
+    display: block;
+}
+
+.art-slidecontainercontentimage013 .active {
+    opacity: 1;
+}
+
+.art-slidecontainercontentimage013 .next, .art-slidecontainercontentimage013 .prev {
+    width: 100%;
+}
+
+.art-slidecontainercontentimage013 .next.forward, .art-slidecontainercontentimage013 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainercontentimage013 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainercontentimage013 .active.back {
+    opacity: 0;
+}
+
+
+.art-slidecontentimage0130 {
+    background-image:  url('images/slidecontentimage0130.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slidecontentimage0130 {
+    background-image:  url('images/slidecontentimage0130.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slidecontentimage0130 {
+    background-image:  url('images/slidecontentimage0130.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slidecontentimage0130 {
+    background-image: url('images/slidecontentimage0130.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slidecontentimage0130 {
+    background-image: url('images/slidecontentimage0130.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slidecontentimage0131 {
+    background-image:  url('images/slidecontentimage0131.jpg');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slidecontentimage0131 {
+    background-image:  url('images/slidecontentimage0131.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slidecontentimage0131 {
+    background-image:  url('images/slidecontentimage0131.jpg');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slidecontentimage0131 {
+    background-image: url('images/slidecontentimage0131.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slidecontentimage0131 {
+    background-image: url('images/slidecontentimage0131.jpg');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigatorcontentimage013 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 364px;
+  left: 93.13%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorcontentimage013
+{
+background: #B1C9C7;background: -webkit-linear-gradient(top, rgba(225, 234, 234, 0.6) 0, rgba(129, 167, 165, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(225, 234, 234, 0.6) 0, rgba(129, 167, 165, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(225, 234, 234, 0.6) 0, rgba(129, 167, 165, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(225, 234, 234, 0.6) 0, rgba(129, 167, 165, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(225, 234, 234, 0.6) 0, rgba(129, 167, 165, 0.6) 100%) no-repeat;background: linear-gradient(to bottom, rgba(225, 234, 234, 0.6) 0, rgba(129, 167, 165, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigatorcontentimage013 > a
+{
+background: #628D8B;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorcontentimage013 > a.active
+{
+background: #A0ABC5;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorcontentimage013 > a:hover
+{
+background: #4C5A7B;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+<nav class="art-nav">
+    <div class="art-nav-inner">
+    <ul class="art-hmenu"><li><a href="inicio.html" class="active">Inicio</a><ul class="active"><li><a href="inicio/ventajas-de-usar-trello.html">VENTAJAS DE USAR TRELLO</a></li><li><a href="inicio/como-usar-trello.html">COMO USAR TRELLO</a></li></ul></li><li><a href="contactanos.html">Contactanos</a></li></ul> 
+        </div>
+    </nav>
+<header class="art-header">
+
+    <div class="art-shapes">
+        
+            </div>
+
+<h1 class="art-headline">
+    <a href="/">Trello</a>
+</h1>
+<h2 class="art-slogan">Vive a tu manera con nosotros</h2>
+
+
+
+
+
+                        
+                    
+</header>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><table class="art-article" border="0" cellspacing="0" cellpadding="0" style="margin:0;width:100%;"><tbody><tr class="even"><td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;width:640px;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;" id="header-image1"><div id="contentimage013" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainercontentimage013" data-width="640" data-height="388">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slidecontentimage0130" >
+
+
+</div>
+<div class="art-slide-item art-slidecontentimage0131" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorcontentimage013" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+
+
+
+
+
+</td><td style="background-color:rgb(69, 82, 112);padding-top:10px;padding-right:16px;padding-bottom:0;padding-left:10px;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><h2>¿Qué es Trello?</h2><p><span style="color: rgb(255, 255, 255); font-size: 16px;">Es una de las aplicaciones de gestión de proyectos más utilizadas tanto a nivel profesional como personal.</span></p><p><a href="https://www.expertosnegociosonline.com/que-es-trello-para-que-sirve/" class="art-button">Leer Más</a></p></td></tr></tbody></table><br><table class="art-article" border="0" cellspacing="0" cellpadding="0" style="width:100%;"><tbody><tr class="even"><td style="width:33%;padding-top:0;padding-right:15px;padding-bottom:0;padding-left:0;border-top-width:0;border-right:1px dotted #cccccc;border-bottom-width:0;border-left-width:0;"><h3>Porqué usar con Trello</h3></td><td style="padding-top:0;padding-right:15px;padding-bottom:0;padding-left:15px;width:34%;border-top-width:0;border-right:1px dotted #cccccc;border-bottom-width:0;border-left-width:0;"><h3>Misión</h3></td><td style="width:33%;padding-top:0;padding-right:0;padding-bottom:0;padding-left:15px;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><h3>Services</h3></td></tr><tr class="even"><td style="width:33%;padding-top:0;padding-right:15px;padding-bottom:0;padding-left:0;border-top-width:0;border-right:1px dotted #cccccc;border-bottom-width:0;border-left-width:0;"><table class="art-article" border="0" cellspacing="0" cellpadding="0" style="width:100%;margin:0;"><tbody><tr class="even"><td style="border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><img width="100" height="100" alt="" src="images/001.png" class=""></td><td style="border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><p>To Do - &nbsp;Por Hacer</p></td></tr><tr><td style="border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><img width="100" height="100" alt="" src="images/002.png" class=""></td><td style="border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><p>Doing - Haciéndose</p></td></tr><tr class="even"><td style="border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><img width="100" height="100" alt="" src="images/003.png" class=""></td><td style="border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><p>Done - Hecho.</p></td></tr></tbody></table></td><td style="padding-top:0;padding-right:15px;padding-bottom:0;padding-left:15px;width:34%;border-top-width:0;border-right:1px dotted #cccccc;border-bottom-width:0;border-left-width:0;"><p><img width="174" height="174" alt="" src="images/004-2.png" style="float: left; " class="">Herramienta de gestión se podía organizar prácticamente todo, desde nuestras tareas profesionales a nuestras tareas personales de una forma muy flexible y versátil.<br></p></td><td style="width:33%;padding-top:0;padding-right:0;padding-bottom:0;padding-left:15px;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><ul><li><span style="color: rgb(226, 52, 29); "><a href="#"><span style="color: #E2341D; ">S</span></a>lack</span></li><li ><span style="color: #303A4F; "><a href="#" ><span style="color: #E2341D; ">Adobe XD.</span></a></span></li><li ><span style="color: #E2341D; "><a href="#" ><span style="color: #E2341D; ">J</span></a>ira</span></li><li ><span style="color: #E2341D; "><a href="#" ><span style="color: #E2341D; ">T</span></a>i<span style="color: #E2341D; ">mely</span></span></li><li ><span style="color: #E2341D; "><a href="#" ><span style="color: #E2341D; ">U</span></a>serlike</span></li><li ><span style="color: #E2341D; "><a href="#" ><span style="color: #E2341D; ">P</span></a>ipeThru</span></li><li ><span style="color: #E2341D; "><a href="#" ><span style="color: #E2341D; ">T</span></a>rellius</span></li><li ><span style="color: #E2341D; "><a href="#" ><span style="color: rgb(226, 52, 29);  ">O</span></a>pp.io</span></li></ul></td></tr><tr class="even"><td style="width:33%;padding-top:0;padding-right:15px;padding-bottom:0;padding-left:0;border-top-width:0;border-right:1px dotted #cccccc;border-bottom-width:0;border-left-width:0;"><a href="https://trello.com/es/integrations" class="art-button">Leer Más</a></td><td style="padding-top:0;padding-right:15px;padding-bottom:0;padding-left:15px;width:34%;border-top-width:0;border-right:1px dotted #cccccc;border-bottom-width:0;border-left-width:0;"><a href="https://www.expertosnegociosonline.com/que-es-trello-para-que-sirve/" class="art-button">Leer Más</a></td><td style="width:33%;padding-top:0;padding-right:0;padding-bottom:0;padding-left:15px;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><a href="https://trello.com/es/integrations" class="art-button" >Leer Más</a></td></tr></tbody></table><br><table class="art-article" border="0" cellspacing="0" cellpadding="0" style="width:100%;"><tbody><tr class="even"><td style="border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;width:33%;"><h3><iframe width="560" height="315" src="https://www.youtube.com/embed/3m063IyO7KU?wmode=transparent&amp;amp;wmode=transparent&amp;amp;wmode=transparent&amp;amp;wmode=transparent&amp;amp;wmode=transparent" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br></h3></td><td style="background-color:rgb(204, 204, 204);padding-right:20px;padding-bottom:0;padding-left:20px;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><span style="color: rgb(35, 41, 57); "><span style="font-size:48px;"><span style="color: rgb(137, 144, 159); "><span style="font-size: 26px; "><span style="color: rgb(129, 136, 152); "><span style="font-family: Arial;">TRELLO<br></span><br></span></span></span></span><span style="font-style: italic;">Aimqie hay apps gratuitas, una imagen visual y física a veces es muy eficaz para conseguir el resultado y, para ello, te bastaran los productos de papeleria online más basicos: una pizarra blanca, unos post-it y unos rotuladores de colores.<br><br>Ya has comprobado qué es Trello Y para que sirve Trello. La verdad que esta aplicación nos organiza la vida, desde cualquier tarea laboral hasta tareas personales<br><br>¿Te ha gustado este artículo de qué es Trello y para qué sirve Trello¿ ¿Quieres aportar algo de información extra sobre qué es Trello y para qué sirve Trello? Si es así coméntalo abajo y si te ha gustado el artículo, !Compártelo!<br></span><br></span></td></tr><tr class="even"><td style="border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;width:33%;"></td><td style="text-align:right;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;"><img width="118" height="56" alt="" src="images/bottom.png" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "></td></tr></tbody></table><br></div>
+                                
+                
+
+</article></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<footer class="art-footer">
+  <div class="art-footer-inner">
+<table class="art-article" border="0" cellspacing="0" cellpadding="0" style="width:990px;"><tbody><tr class="even"><td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;">&nbsp;ROY TORRES<br><br></td></tr></tbody></table><p><br></p>
+    <p class="art-page-footer">
+        <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+    </p>
+  </div>
+</footer>
+
+</div>
+
+
+</body></html>
